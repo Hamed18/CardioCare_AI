@@ -67,6 +67,32 @@ Model performance is evaluated using:
 
 ---
 
+# Project Summary
+
+This project focused on building and evaluating machine learning models to predict the likelihood of heart disease.
+
+## Key Findings
+
+* Several machine learning models were successfully implemented and evaluated.
+* All models demonstrated reasonable predictive performance on the dataset.
+* The **Random Forest** model consistently achieved the best performance metrics across our evaluations.
+* Feature importance analysis using the Random Forest model highlighted the following features as particularly influential in the prediction:
+    * **ca**: Number of major vessels (0-3) colored by fluoroscopy
+    * **thal**: Thallium stress test result (3 = normal; 6 = fixed defect; 7 = reversible defect)
+    * **oldpeak**: ST depression induced by exercise relative to rest
+    * **thalach**: Maximum heart rate achieved
+* **SHAP (SHapley Additive exPlanations) analysis** was employed to provide further insights into how individual features contribute to the model's predictions for each instance. This allows for a more granular understanding of the model's decision-making process.
+
+## Future Improvements
+
+To further enhance the project and its potential clinical utility, the following improvements are planned:
+
+* **Hyperparameter Tuning:** Implementing techniques like **GridSearchCV** to systematically search for the optimal hyperparameters for each model. This can lead to significant improvements in model performance.
+* **Feature Engineering:** Exploring and creating new features from the existing data that might capture more complex relationships and improve the predictive power of the models.
+* **Additional Explainability Tools:** Investigating and integrating other explainability techniques that are particularly relevant and interpretable for clinical practitioners. This will aim to increase trust and understanding in the model's predictions within a medical context.
+
+---
+
 ## 🔧 Installation
 
 To run this project locally or in a notebook environment, install the required packages:
